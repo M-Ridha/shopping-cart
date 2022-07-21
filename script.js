@@ -8,11 +8,6 @@ for(let i=0;i<btnsPlus.length;i++){
         let h3=e.target.parentElement.parentElement.querySelector(".legende").querySelector(".price")
         let sum=document.getElementById("somme")
         sum.value=parseFloat(sum.value)+parseFloat(h3.textContent)
-        
-       
-        
-
-       
     })
 }
 
@@ -51,18 +46,16 @@ var close = document.getElementsByClassName("delete");
     var div = this.parentElement;
     div.style.opacity = "0";
     let qteElement=div.getElementsByClassName('inputqte')[0]
-   
+  
     let prixfixe=div.getElementsByClassName('price')[0] 
     
     let prixtot=document.getElementById('somme')
     prixtot.value=parseInt( prixtot.value)-(parseInt(prixfixe.textContent)*parseInt(qteElement.value))
 
     div.remove()
-   
-   
-   
-   
-  
+
   }}
-     
+
+
+
 
